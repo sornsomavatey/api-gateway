@@ -38,7 +38,7 @@ function authRole(role) {
  })
 app.use('/auth', (req, res) => {
  console.log("INSIDE API GATEWAY AUTHENTICATION/LOGIN")
- proxy.web(req, res, { target: 'http://3.91.222.41:5001' });
+ proxy.web(req, res, { target: 'http://3.91.222.41:5000' });
  })
 app.listen(port, () => {
  console.log("API Gateway Service is running on PORT NO : ", port)
